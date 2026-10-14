@@ -1,0 +1,4 @@
+file,brand_truth,ingredients_truth,strength_truth,group,notes,photographer,permission
+g-001.jpg,EXAMPLE Dolo 650,paracetamol,650 mg,clean,EXAMPLE ROW - replace with a real strip; flat; window light,EXAMPLE initials,own
+g-002.jpg,EXAMPLE brand name,EXAMPLE generic1;generic2,EXAMPLE 500 mg;10 mg,torn,EXAMPLE ROW - torn at the top; only half of the brand visible,EXAMPLE initials,own
+g-003.jpg,EXAMPLE brand name,EXAMPLE generic,EXAMPLE 10 mg,glare,EXAMPLE ROW - lamp glare across the foil,EXAMPLE initials,permission from family member

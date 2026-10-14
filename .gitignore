@@ -1,43 +1,70 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
-node_modules/
-
-# Expo
-.expo/
-dist/
-web-build/
-expo-env.d.ts
-
-# Native
-.kotlin/
-*.orig.*
+# --- Secrets (never commit) ---
+.env
+.env.*
+!.env.example
+*.keystore
 *.jks
 *.p8
 *.p12
 *.key
+*.pem
 *.mobileprovision
 
-# Metro
+# --- Private evidence: strip photos stay on the laptop ---
+private-strips/
+**/private-strips/
+data/strips/*.jpg
+data/strips/*.jpeg
+data/strips/*.png
+data/strips/*.heic
+
+# --- Node / package managers ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- Expo ---
+.expo/
+.expo-shared/
+dist/
+web-build/
+expo-env.d.ts
+
+# --- Metro ---
 .metro-health-check*
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
+# --- Android build outputs (prebuild generates android/) ---
+android/
+.gradle/
+local.properties
+*.apk
+*.aab
+*.hprof
 
-# macOS
+# --- iOS (not targeted, but ignore if prebuild creates it) ---
+ios/
+Pods/
+*.xcworkspace
+*.xcuserstate
+
+# --- Supabase local dev ---
+supabase/.branches
+supabase/.temp
+supabase/.env
+supabase/functions/.env
+supabase/functions/**/.env
+
+# --- Generated build output from tools/ ---
+build/
+coverage/
+
+# --- Editors and OS ---
 .DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
-*.tsbuildinfo
-
-example
-
-# generated native folders
-/ios
-/android
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.log
