@@ -1,0 +1,18 @@
+{
+  "_meta.review": "NEEDS NATIVE REVIEW",
+  "app.name": "दवाई साथी",
+  "ui.continue": "आगे बढ़ें",
+  "ui.retry": "फिर से कोशिश करें",
+  "ui.error_generic": "कुछ गड़बड़ हो गई। कृपया फिर से कोशिश करें।",
+  "onboarding.language_title": "अपनी भाषा चुनें",
+  "onboarding.role_title": "यह ऐप कौन इस्तेमाल करेगा?",
+  "onboarding.role_elder": "ये दवाइयाँ मेरे लिए हैं",
+  "onboarding.role_caregiver": "किसी और की दवाइयों का ध्यान रखना है",
+  "onboarding.account_title": "अपना खाता बनाएँ",
+  "ui.create_account": "खाता बनाएँ",
+  "greeting.neutral": "नमस्ते",
+  "ui.settings": "सेटिंग",
+  "ui.language": "भाषा",
+  "ui.offline": "ऑफ़लाइन",
+  "ui.placeholder_note": "यह स्क्रीन जल्द आएगी।"
+}

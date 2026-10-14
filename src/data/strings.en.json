@@ -1,0 +1,18 @@
+{
+  "_meta.review": "ok",
+  "app.name": "Dawai Saathi",
+  "ui.continue": "Continue",
+  "ui.retry": "Try again",
+  "ui.error_generic": "Something went wrong. Please try again.",
+  "onboarding.language_title": "Choose your language",
+  "onboarding.role_title": "Who will use this app?",
+  "onboarding.role_elder": "I take these medicines",
+  "onboarding.role_caregiver": "I help someone who does",
+  "onboarding.account_title": "Create your account",
+  "ui.create_account": "Create account",
+  "greeting.neutral": "Hello",
+  "ui.settings": "Settings",
+  "ui.language": "Language",
+  "ui.offline": "Offline",
+  "ui.placeholder_note": "This screen is coming soon."
+}
