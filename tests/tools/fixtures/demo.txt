@@ -1,0 +1,6 @@
+# demo list used by the tests
+Dolo 650
+Augmentin 625 Duo
+Ascoril LS Syrup
+Unverified Combo
+Not In Dataset

@@ -34,19 +34,19 @@ interface State {
 }
 
 export class AppErrorBoundary extends React.Component<Props, State> {
-  state: State = { hasError: false };
+  override state: State = { hasError: false };
 
   static getDerivedStateFromError(): State {
     return { hasError: true };
   }
 
-  componentDidCatch(error: Error): void {
+  override componentDidCatch(error: Error): void {
     // Name only: never log messages or content.
     console.error(`app_error_boundary:${error.name}`);
     SplashScreen.hideAsync().catch(() => undefined);
   }
 
-  render(): React.ReactNode {
+  override render(): React.ReactNode {
     if (!this.state.hasError) {
       return this.props.children;
     }

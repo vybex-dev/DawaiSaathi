@@ -37,7 +37,7 @@ const isLanguage = (v: string | undefined): v is Language => v === 'en' || v ===
 const isRole = (v: string | undefined): v is Role => v === 'elder' || v === 'caregiver';
 const isTextSize = (v: string | undefined): v is TextSize => v === 'normal' || v === 'large';
 
-function toMap(rows: ReadonlyArray<SettingRow>): Map<string, string> {
+function toMap(rows: readonly SettingRow[]): Map<string, string> {
   const map = new Map<string, string>();
   for (const row of rows) {
     map.set(row.key, row.value);
@@ -46,7 +46,7 @@ function toMap(rows: ReadonlyArray<SettingRow>): Map<string, string> {
 }
 
 /** Pure: turns raw rows into typed settings. Invalid or missing values fall back to defaults. */
-export function parseSettings(rows: ReadonlyArray<SettingRow>): PersistedSettings {
+export function parseSettings(rows: readonly SettingRow[]): PersistedSettings {
   const map = toMap(rows);
   const language = map.get('language');
   const role = map.get('role');
@@ -61,7 +61,7 @@ export function parseSettings(rows: ReadonlyArray<SettingRow>): PersistedSetting
 }
 
 /** Pure: the stub "signed in" flag. Replaced by the real Supabase session in Prompt 6.2. */
-export function parseStubSession(rows: ReadonlyArray<SettingRow>): boolean {
+export function parseStubSession(rows: readonly SettingRow[]): boolean {
   return toMap(rows).get('stubSession') === '1';
 }
 

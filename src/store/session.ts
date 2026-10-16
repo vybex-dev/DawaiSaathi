@@ -42,7 +42,7 @@ interface SessionState {
   /** In memory only: the splash route shows once per cold start that needs onboarding. */
   splashDone: boolean;
   hydrated: boolean;
-  hydrateFrom(rows: ReadonlyArray<SettingRow>, repo: SettingsRepo): void;
+  hydrateFrom(rows: readonly SettingRow[], repo: SettingsRepo): void;
   setHasSession(value: boolean): Promise<void>;
   markSplashDone(): void;
 }

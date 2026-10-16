@@ -1,0 +1,18 @@
+id,name,price(₹),Is_discontinued,manufacturer_name,type,pack_size_label,short_composition1,short_composition2
+1,Dolo 650 Tablet,30.91,FALSE,Micro Labs Ltd,allopathy,strip of 15 tablets,Paracetamol (650mg),
+2,Augmentin 625 Duo Tablet,223.42,FALSE,Glaxo SmithKline Pharmaceuticals Ltd,allopathy,strip of 10 tablets,Amoxycillin  (500mg) ,  Clavulanic Acid (125mg)
+3,Ascoril LS Syrup,118,FALSE,Glenmark Pharmaceuticals Ltd,allopathy,bottle of 100 ml Syrup,Ambroxol (30mg/5ml) , Levosalbutamol (1mg/5ml) 
+4,Unverified Combo Tablet,10,FALSE,Nobody Ltd,allopathy,strip of 10 tablets,Alpha (10mg),Beta (20mg)
+5,,10,FALSE,Nobody Ltd,allopathy,strip of 10 tablets,Gamma (10mg),
+6,No Ingredients Tablet,10,FALSE,Nobody Ltd,allopathy,strip of 10 tablets,,
+1,Dolo Duplicate Tablet,10,FALSE,Nobody Ltd,allopathy,strip of 10 tablets,Paracetamol (500mg),
+8,Bad Strength Tablet,10,FALSE,Nobody Ltd,allopathy,strip of 10 tablets,Delta (lots),
+9,Adrenaline Injection,10,FALSE,Nobody Ltd,allopathy,vial of 1 ml injection,Adrenaline (NA),
+10,Old Brand Tablet,10,TRUE,Nobody Ltd,allopathy,strip of 10 tablets,Epsilon (5mg),
+11,Forte Tablet,10,FALSE,Nobody Ltd,allopathy,strip of 10 tablets,Zeta (5mg),
+12,Dologel,10,FALSE,Nobody Ltd,allopathy,tube of 30 gm gel,Eta (1% w/w),
+13,Point Cream,10,FALSE,Nobody Ltd,allopathy,tube of 30 gm cream,Theta (.75% w/w),
+14,"Quoted, Comma Tablet",10,FALSE,"Nobody, Ltd",allopathy,strip of 10 tablets,Iota (1mg),
+15,Neurobion Forte Tablet,10,FALSE,Merck,allopathy,strip of 30 tablets,Vitamin B6 (Pyridoxine) (3mg),
+16,Telma 40 Tablet,10,FALSE,Glenmark,allopathy,strip of 15 tablets,Telmisartan (40mg),
+17,Telma 80 Tablet,10,FALSE,Glenmark,allopathy,strip of 15 tablets,Telmisartan (80mg),

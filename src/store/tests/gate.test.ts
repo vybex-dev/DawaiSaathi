@@ -1,6 +1,6 @@
 import { isOnboardingTarget, resolveGate, type GateInput, type GateTarget } from '@/store/session';
 
-const cases: Array<[string, GateInput, GateTarget]> = [
+const cases: [string, GateInput, GateTarget][] = [
   [
     'nothing chosen goes to language',
     { language: null, role: null, hasSession: false },

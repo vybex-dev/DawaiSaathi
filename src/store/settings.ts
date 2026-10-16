@@ -27,7 +27,7 @@ async function persist(key: SettingKey, value: string): Promise<void> {
 
 interface SettingsState extends PersistedSettings {
   hydrated: boolean;
-  hydrateFrom(rows: ReadonlyArray<SettingRow>, repo: SettingsRepo): void;
+  hydrateFrom(rows: readonly SettingRow[], repo: SettingsRepo): void;
   setLanguage(language: Language): Promise<void>;
   setRole(role: Role): Promise<void>;
   setTextSize(textSize: TextSize): Promise<void>;

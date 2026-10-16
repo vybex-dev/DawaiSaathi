@@ -28,7 +28,7 @@ export interface PlaceholderAction {
 interface PlaceholderScreenProps {
   name: string;
   next?: Href;
-  actions?: ReadonlyArray<PlaceholderAction>;
+  actions?: readonly PlaceholderAction[];
   showDevTools?: boolean;
 }
 
@@ -42,7 +42,7 @@ export function PlaceholderScreen({
   const { language, t } = useLanguage();
   const font = FONTS[language];
 
-  const resolved: ReadonlyArray<PlaceholderAction> =
+  const resolved: readonly PlaceholderAction[] =
     actions ??
     (next !== undefined ? [{ label: t('ui.continue'), onPress: () => router.navigate(next) }] : []);
 

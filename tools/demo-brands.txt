@@ -1,0 +1,18 @@
+# Demo brands: ONE per line, written as printed on the strip. Lines starting with # are ignored.
+# These are starter examples. Replace them with the roughly 100 brands you will show in the demo.
+# npm run build:catalog always keeps these rows (they are first in line when the 30,000 cap fills)
+# and writes build/verify-sheet.csv with one row per matching catalogue entry for you to check.
+# Write each brand as printed on the strip, including words such as Syrup, Cream or Injection:
+# "Ascoril LS" does NOT match "Ascoril LS Syrup". Words Tablet, Tab, Capsule, SR, XL, Forte and Plus
+# are ignored, and so are strengths (500mg). A brand written without a strength ("Allegra") matches
+# every strength of that brand.
+Dolo 650
+Crocin Advance
+Azithral 500
+Augmentin 625 Duo
+Allegra
+Ecosprin 75
+Glycomet 500
+Telma 40
+Pan 40
+Combiflam

@@ -1,0 +1,4 @@
+sub_category,product_name,salt_composition,product_price,product_manufactured,medicine_desc,side_effects,drug_interactions
+Antibiotic,Augmentin 625 Duo Tablet,Amoxycillin (500mg) + Clavulanic Acid (125mg),₹223,GSK,desc,"nausea,vomiting",{}
+Cough,Ascoril LS Syrup,Ambroxol (30mg/5ml) + Levosalbutamol (1mg/5ml) + Guaifenesin (50mg/5ml),₹118,Glenmark,desc,x,{}
+Pain,Dolo 650 Tablet,Paracetamol (650mg),₹30,Micro Labs,desc,x,{}

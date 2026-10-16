@@ -1,4 +1,5 @@
-import { createSettingsRepo, ensureSettingsTable } from '@/data/settingsRepo';
+import { DATABASE_NAME, FORCE_CATALOG_REFRESH, initDatabase } from '@/data/db';
+import { createSettingsRepo } from '@/data/settingsRepo';
 import { AppErrorBoundary } from '@/design/components/AppErrorBoundary';
 import { isOnboardingTarget, useGate, useSession } from '@/store/session';
 import { useSettings } from '@/store/settings';
@@ -19,8 +20,6 @@ import { SQLiteProvider, useSQLiteContext } from 'expo-sqlite';
 import React, { Suspense, useEffect, useState } from 'react';
 
 SplashScreen.preventAutoHideAsync().catch(() => undefined);
-
-const DATABASE_NAME = 'dawai.db';
 
 function toError(value: unknown): Error {
   return value instanceof Error ? value : new Error('load_failed');
@@ -103,8 +102,12 @@ export default function RootLayout(): React.ReactElement {
       <Suspense fallback={null}>
         <SQLiteProvider
           databaseName={DATABASE_NAME}
-          assetSource={{ assetId: require('../assets/catalog.db') }}
-          onInit={ensureSettingsTable}
+          assetSource={{
+            assetId: require('../assets/catalog.db'),
+            // Dev only, and off by default: see FORCE_CATALOG_REFRESH in src/data/db.ts.
+            forceOverwrite: __DEV__ && FORCE_CATALOG_REFRESH,
+          }}
+          onInit={initDatabase}
           useSuspense
         >
           <Bootstrap />
